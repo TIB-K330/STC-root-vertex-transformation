@@ -186,7 +186,7 @@ while stop==0
     end
     for k=1:robot_num
        if dm(k) > threshold || dm(k) < -threshold
-          m(k) = m(k)+0.00001*dm(k);
+          m(k) = m(k)+0.005*dm(k);
        else
            count = count + 1;
        end
